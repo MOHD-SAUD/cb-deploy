@@ -12,6 +12,9 @@ app.get('/hi',(req,res)=>{
 app.get('/bye',(req,res)=>{
     res.send(`Good Bye! ${req.query.name}`)
 })
+app.get('/app',(req,res)=>{
+    res.send('You are on main app')
+})
 app.listen(PORT,()=>{
     console.log('http://localhost:4321'+PORT) 
 })
